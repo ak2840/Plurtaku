@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         //http://www.plurk.com/OAuth/request_token?oauth_nonce=44259414&oauth_timestamp=1495358660&oauth_consumer_key=oHat5lVqqhU0&oauth_signature_method=HMAC-SHA1&oauth_version=1.0&oauth_signature=4VFHj6HWyrg6NLIk5bdA5DdD7ko%3D
         let now = Date()
         let timeStamp = String(now.timeIntervalSince1970)
-        let oauth_signature;
+        let oauth_signature = "";
         
         let url = String(format: "https://www.plurk.com/OAuth/request_token?oauth_nonce=%@&oauth_timestamp=%@&oauth_consumer_key=%@&oauth_signature_method=%@&oauth_version=%@&oauth_signature=%@",
                          Constant.OAUTH_NONCE,
